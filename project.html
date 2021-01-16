@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/styleProject.css">
+
+    <meta charset="utf-8">
+      
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+    <meta http-equiv="x-ua-compatible" content="ie=edge"> 
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>Project</title>
+</head>
+<body>
+    <div id="page">
+        <div id="formBack">
+            <div id="head">
+                <p>
+                    Project Budget
+                </p>
+            </div>
+            <div id="form">
+                <form>
+                    <label id="project">Project Name</label>
+                    <select id="projectDown" onchange="projectName()">
+                        <option> </option>
+                        <option value="front">Front-end only</option>
+                        <option value="back">Back-end only</option>
+                        <option value="frontBack">Front-end & back-end </option>
+                    </select>
+
+                    <label id="Capabilities">Capabilities</label>
+                    <select id="CapabilitiesDown" onchange="projectName()">
+                        <option> </option>
+                        <option value="css">Css</option>
+                        <option value="cssjs">Css & js</option>
+                        <option value="all">All ways</option>
+                    </select>  
+
+                    <label id="timeRange">Time Range</label>
+                    <select id="timeRangeDown" onchange="projectName()">
+                        <option> </option>
+                        <option value="one">1-2 weeks</option>
+                        <option value="two">3-4 weeks</option>
+                        <option value="three">4-8 weeks</option>
+                    </select>  
+                   
+                </form>
+                 
+                <button id="calc" onclick="getBudget()">Calculate</button>
+                
+                <div id="demo"></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="JS/project.js"></script>
+</body>
+</html>
